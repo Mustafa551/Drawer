@@ -58,14 +58,18 @@ const CustomDrawerContent = () => {
   return (
     <DrawerContentScrollView scrollEnabled contentContainerStyle={STYLES.flex1}>
       <View style={[STYLES.pH(20), STYLES.mT(25)]}>
-        <Image
-          style={{width: 90, height: 90, borderRadius: 50}}
-          resizeMode="contain"
-          source={IMAGES.avatar}
-        />
+        <View style={[STYLES.rowCenter, STYLES.mV(20), STYLES.JCCenter]}>
+          <Image
+            style={{width: 55, height: 55, borderRadius: 50, marginRight: 10}}
+            resizeMode="contain"
+            source={IMAGES.avatar}
+          />
 
-        <Text style={styles.title}>Muhammad Mustafa</Text>
-
+          <View style={[STYLES.flex1, STYLES.JCCenter]}>
+            <Text style={styles.title}>Muhammad Mustafa</Text>
+            <Text style={styles.email}>mohammadmustafa551@gmail.com</Text>
+          </View>
+        </View>
         <View style={styles.divider}></View>
 
         {DRAWER_SCREENS.map((val, index) => (

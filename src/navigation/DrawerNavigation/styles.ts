@@ -5,7 +5,7 @@ export const styling = StyleSheet.create({
   drawerStyle: {
     backgroundColor: COMMON_COLORS.blueBayoux,
     flex: 1,
-    width: '60%',
+    width: '70%',
   },
 
   sceneContainerStyle: {
@@ -14,19 +14,28 @@ export const styling = StyleSheet.create({
   },
 
   title: {
-    fontSize: 17,
+    fontSize: 15,
     fontWeight: '600',
     color: COMMON_COLORS.white,
-    marginTop: 15,
-    marginBottom: 15,
+    // marginTop: 15,
+    marginBottom: 5,
+  },
+
+  email: {
+    fontSize: 13,
+    fontWeight: '600',
+    color: COMMON_COLORS.white,
+    // marginTop: 15,
+    // marginBottom: 15,
   },
 
   divider: {
     height: 2,
-    width: '70%',
+    // width: '70%',
     backgroundColor: COMMON_COLORS.white,
     borderRadius: 5,
     marginTop: 5,
+    marginBottom: 5,
   },
 
   iconCont: {
